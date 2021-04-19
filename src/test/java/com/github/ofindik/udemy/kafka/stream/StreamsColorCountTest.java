@@ -39,12 +39,6 @@ public class StreamsColorCountTest {
 	}
 
 	@Test
-	public void dummyTest () {
-		String dummy = "Du" + "mmy";
-		assertEquals (dummy, "Dummy");
-	}
-
-	@Test
 	public void makeSureCountsAreCorrect () {
 		TestInputTopic<String, String> inputTopic = testDriver.createInputTopic ("favorite-color-input",
 			new StringSerializer (), new StringSerializer ());
